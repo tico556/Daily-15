@@ -1,5 +1,7 @@
-# Daily-15
-Daily 15 -> want to tweak
+# Daily-15 II
+Daily 15 II:
+
+Edit this one, when finished replace master with this.
 
 Assignment link: 
 
