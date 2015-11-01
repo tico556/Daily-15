@@ -200,7 +200,7 @@ Boolean u_correct(void)
 	return FALSE;
 }
 
-float unit_choice(void)
+double unit_choice(void)
 {
 	char answer;
 	do
