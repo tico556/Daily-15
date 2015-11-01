@@ -89,9 +89,9 @@ int main(int argc, char* argv[])
 		}
 
 
-float input()
+double input()
 {	
-	float first, second, last, input2;
+	double first, second, last, input2;
 
 	printf("Please enter the first number: ");
 	scanf("%lf", &first);
