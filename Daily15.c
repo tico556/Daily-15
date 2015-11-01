@@ -24,20 +24,20 @@ typedef enum boolean Boolean;
 
 // Precondition: None
 // Postcondition: Inputs are taken in proper units.
-float input();
+double input();
 
 // Precondition: Proper inputs have been made
 // Postcondition: Outputs the attractive force between units
-float calculate_attractive_force();
+double calculate_attractive_force();
 
 void clear_key();
 Boolean u_continue();
 Boolean u_correct();
-float unit_choice();
+double unit_choice();
 
 int main(int argc, char* argv[])
 {
-	float output, distance, mass1, mass2, force_of_bodies, grav_constant;
+	double output, distance, mass1, mass2, force_of_bodies, grav_constant;
 	
 	printf("The number is scientific notation \n");
 	printf("The format is input1 * 10 ^ input2.\n");
@@ -94,11 +94,11 @@ float input()
 	float first, second, last, input2;
 
 	printf("Please enter the first number: ");
-	scanf("%f", &first);
+	scanf("%lf", &first);
 	clear_key();
 
 	printf("And what number is 10 raised to?: ");
-	scanf("%f", &second);
+	scanf("%lf", &second);
 	clear_key();
 	input2 = second;
 
