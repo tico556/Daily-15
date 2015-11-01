@@ -39,6 +39,7 @@ int main(int argc, char* argv[])
 
 
 	//************** fix so printf gives correct units**************
+	// MASS_UNIT, DISTANCE_UNIT, AND FORCE_UNIT have been used as place holders.
 
 	do{
 
@@ -48,26 +49,26 @@ int main(int argc, char* argv[])
 
 		do{
 
-			printf("A distance, in CENTIMETER(S): ");
+			printf("A distance, in DISTANCE_UNIT(S): ");
 			distance = input();
-			printf("You entered: %g CENTIMETER(S).\nWhich: is %g KILOMETER(S).\n",
+			printf("You entered: %g DISTANCE_UNIT(S).\nWhich: is %g DISTANCE_UNIT(S).\n",
 				distance, distance * pow(10, -5));
 		} while (u_correct() != 1);
 
 		do{
-			printf("A mass for body 1, in GRAM(S) : ");
+			printf("A mass for body 1, in MASS_UNIT(S) : ");
 			mass1 = input();
-			printf("You entered: %g GRAM(S)\nWhich is: %g KILOGRAMS\n", mass1, mass1 * pow(10, -3));
+			printf("You entered: %g MASS_UNIT(S)\nWhich is: %g MASS_UNIT(S)\n", mass1, mass1 * pow(10, -3));
 		} while (u_correct() != 1);
 
 		do{
-			printf("A mass for body 2, in KILOGRAM(S): ");
+			printf("A mass for body 2, in MASS_UNIT(S): ");
 			mass2 = input();
-			printf("You entered: %g GRAM(S)\nWhich is %g KILOGRAMS\n", mass2, mass2* pow(10, -3));
+			printf("You entered: %g MASS_UNIT(S))\nWhich is %g MASS_UNIT(S)\n", mass2, mass2* pow(10, -3));
 		} while (u_correct() != 1);
 
 		force_of_bodies = calculate_attractive_force( distance, mass1, mass2, grav_constant); //calculate force of bodies using a function
-		printf("Attractive force: %g UNITS \n", force_of_bodies);
+		printf("Attractive force: %g FORCE_UNIT(S) \n", force_of_bodies);
 
 	} while (u_continue());
 
